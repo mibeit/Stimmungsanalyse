@@ -8,7 +8,7 @@ from transformers import BertTokenizer, BertForSequenceClassification
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-from model import load_model
+from Stimmungsanalyse.model_bert import load_model
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
